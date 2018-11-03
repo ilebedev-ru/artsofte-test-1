@@ -8,40 +8,147 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div style="display:none">
+   <!--  <div style="display:none">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <nav class="main-header__menu">
-          <div class="main-header__logo">
-            <h1 class="main-header__title">Cozy House</h1>
-            <p class="main-header__text">Shelter for pets in Boston</p>
-          </div>
-          <ul class="main-header__list">
-
-            <li class="main-header__item">
-              <a class="main-header__link" href="#about"> </a>
+      <nav class="main-header__upline upline">
+        <div class="upline__wrapper">
+          <a class="upline__logo">
+            <span>Digital Banking</span>
+            <span>Be Safe Banking</span>
+          </a>
+          <ul class="upline__list">
+            <li class="upline__item">
+              <a class="upline__link" href="#cards">Cards</a>
             </li>
-
+            <li class="upline__item">
+              <a class="upline__link" href="#service">Service</a>
+            </li>
+            <li class="upline__item">
+              <a class="upline__link" href="#">Banking</a>
+            </li>
+            <li class="upline__item">
+              <a class="upline__link" href="#faq">FAQ</a>
+            </li>
+            <li class="upline__item">
+              <a class="upline__link" href="#contact">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </div>
+          <a class="upline__create-link" href="">Create Account</a>
+        </div>  
+      </nav>
+
+      <section class="main-header__intro intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__title">To Make Your Life Easier Take a Card</h1>
+          <p class="intro__desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered There are many variations of passages of Lorem Ipsum randomised words which don't look even slightly believable.</p>
+          <button class="intro__button">Apply Now</button>
+          <div class="intro__img-zone">
+            <img class="intro__img intro__img--main" src="img/intro__credit-card.jpg" alt="Credit Card" width="570" height="357"> 
+            <img class="intro__img" src="img/intro__credit-card.jpg" alt="Credit Card" width="414" height="259">
+            <img class="intro__img" src="img/intro__credit-card.jpg" alt="Credit Card" width="414" height="259">
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
-      <section class="about">
-        <a id="about"></a> 
-        <div class="about__wrapper">
-          <h2 class="about__title">ЗАГОЛОВОК</h2>
-          
+      <section class="cards">
+        <a id="#cards"></a> 
+        <div class="cards__wrapper">
+          <p class="cards__pre-title">Easy Process</p>
+          <h2 class="cards__title">To Get A Credit Card</h2>
+          <ul class="cards__list">
+            <li class="cards__item cards__item--online">
+              <h3 class="cards__name">Online Application</h3>
+              <p class="cards__desc">Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+            </li>
+            <li class="cards__item cards__item--approval">
+              <h3 class="cards__name">Get Approval</h3>
+              <p class="cards__desc">Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+            </li>
+            <li class="cards__item cards__item--get-card">
+              <h3 class="cards__name">Get Your Card</h3>
+              <p class="cards__desc">Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="service">
+        <a id="#service"></a> 
+        <div class="service__wrapper">
+          <p class="service__pre-title">useful service avaible</p>
+          <h2 class="service__title">Service of Credit Card</h2>
+          <ul class="service__list">
+            <li class="service__item">
+              <img class="service__img" src="" alt="" width="270" height="270">
+              <p class="service__name">Balence transform</p>
+            </li>
+            <li class="service__item">
+              <img class="service__img" src="" alt="" width="270" height="270">
+              <p class="service__name">Internet Banking</p>
+            </li>
+            <li class="service__item">
+              <img class="service__img" src="" alt="" width="270" height="270">
+              <p class="service__name">Buying Payment</p>
+            </li>
+            <li class="service__item">
+              <img class="service__img" src="" alt="" width="270" height="270">
+              <p class="service__name">Buy Air Ticket</p>
+            </li>
+            <button class="service__button service__button--left"><span class="visually-hidden">Back</span></button>
+            <button class="service__button service__button--right"><span class="visually-hidden">Forward</span></button>
+          </ul>
+        </div>
+      </section>
+
+      <section class="statistics">
+        <div class="statistics__wrapper">
+          <h2 class="visually-hidden">Statistics</h2>
+          <ul class="statistics__list">
+            <li class="statistics__item statistics__item--user">
+              <p class="statistics__num">725M</p>
+              <p class="statistics__name">Happy User</p>
+            </li>
+            <li class="statistics__item statistics__item--app">
+              <p class="statistics__num">700M</p>
+              <p class="statistics__name">User Apprication</p>
+            </li>
+            <li class="statistics__item statistics__item--payment">
+              <p class="statistics__num">10M+</p>
+              <p class="statistics__name">Payment Service</p>
+            </li>
+            <li class="statistics__item statistics__item--feedback">
+              <p class="statistics__num">600M</p>
+              <p class="statistics__name">User Feedback</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Your Message</h2>
+          <form class="contacts__form" action="">
+            <div class="contacts__left-part">
+              <input type="text" name="name" placeholder="Your Name">
+              <input type="email" name="mail" placeholder="Email Address">
+              <input type="text" name="subj" placeholder="Subject">
+            </div>
+            <div class="contacts__right-part">
+              <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+              <input type="submit" value="Submit">
+            </div>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        
+        <p class="main-footer__text">Copyright @ Digital Marketing. AllRight Reseverd</p>
       </div>   
     </footer>
 
