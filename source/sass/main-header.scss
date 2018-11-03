@@ -1,16 +1,56 @@
 .main-header {
   width: 100%;
- 
+  position: relative;
+ 	background-color: -color2;
+	background-image: 
+	-webkit-linear-gradient(198deg, #071d68 0%, #0b4bec 100%),
+	url('../img/main-header__bg-1.png');
+	background-image: 
+	-o-linear-gradient(198deg, #071d68 0%, #0b4bec 100%),
+	url('../img/main-header__bg-1.png');
+	background-image: 
+	url('../img/main-header__bg-1.png'),
+	url('../img/main-header__bg-2.png'),
+	url('../img/main-header__bg-3.png'),
+	url('../img/main-header__bg-4.png'),
+	linear-gradient(288deg, #071d68 0%, #0b4bec 100%);
+	background-repeat: 
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat, 
+		no-repeat;
+	background-position: 
+		10% 34%,
+		8% 45%,
+		20% 40%,
+		20% center,
+		center center;
+	overflow: hidden;
+		
+	&::after,
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: -20%;
+		width: 630px;
+		height: 347px;
+		background-image: linear-gradient(-18deg, #071d68 0%, #0b4bec 100%);
+		transform: rotate(45deg);
+		-webkit-border-radius: 40px;
+		        border-radius: 40px;
+		opacity: 0.25;
+	}
+
+	&::after {
+		top: 40%;
+		background-image: linear-gradient(-18deg, rgba(7, 29, 104, 0.2) 0%, rgba(11, 75, 236, 0.2) 100%);
+		opacity: 1;
+	}
 }
 
 .main-header__wrapper {
 	@include desktop-container;
-}
-
-.main-header__menu {
-
-}
-
-.main-header__title {
-
 }

@@ -33,25 +33,3 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.button {
-  margin: 0;
-  padding: 15px 40px;
-
-  color: $black;
-  font-family: $font-family2;
-  font-weight: 400;
-  font-size: 17px;
-  letter-spacing: 0.06em;
-
-  border: 2px solid $color1;
-  border-radius: 30px;
-  background-color: $color1;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: #fddcc4;
-  }
-}
