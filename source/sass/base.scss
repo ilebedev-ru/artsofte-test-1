@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: $desktop-width;
+  background-color: $backgroung-color1;
+  font-family: $font-family1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize;
+  line-height: 1.2;
+  color: $color2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  margin: 0;
+  padding: 15px 40px;
+
+  color: $black;
+  font-family: $font-family2;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+
+  border: 2px solid $color1;
+  border-radius: 30px;
+  background-color: $color1;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #fddcc4;
+  }
+}

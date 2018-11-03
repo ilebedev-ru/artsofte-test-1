@@ -1,0 +1,18 @@
+@import "normalize.scss";
+//base
+@import "variables.scss";
+@import "mixins.scss";
+// global
+@import "base.scss";
+@import "fonts.scss";
+@import "typo.scss";
+// index
+@import "main-header.scss";
+@import "intro.scss";
+@import "about.scss";
+@import "friends.scss";
+@import "slider.scss";
+@import "help.scss";
+@import "donation.scss";
+@import "main-footer.scss";
+@import "friends-modal.scss";

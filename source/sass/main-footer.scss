@@ -1,0 +1,7 @@
+.main-footer {
+  width: 100%;
+}
+
+.main-footer__wrapper {
+  @include desktop-container;
+}
