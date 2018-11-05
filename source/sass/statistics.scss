@@ -1,0 +1,56 @@
+.statistics {
+	width: 100%;
+	background-color: $backgroung-color1;
+	background-image: url('../img/statistics__bg2.png');
+	background-repeat: no-repeat;
+}
+
+.statistics__wrapper {
+	@include desktop-container;
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
+
+.statistics__list {
+	margin: 0;
+	padding: 0 10px;
+	list-style: none;
+	
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+.statistics__icon {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 50px;
+	
+	font-family: $font-family4;
+	color: $color1;
+	font-size: 56px;
+	font-weight: 400;
+	line-height: 42px;
+	text-align: center;
+}
+
+.statistics__num {
+	padding: 0;
+	margin: 0;
+	
+	color: $color1;
+	font-size: 52px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.statistics__name {
+	margin: 0;
+	padding: 0;
+	
+	color: $color1;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 40px;
+	text-align: center;
+}

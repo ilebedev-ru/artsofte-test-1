@@ -4,13 +4,13 @@
 
 .intro__wrapper {
 	@include desktop-container;
-	padding-top: 190px;
+	padding-top: 193px;
 	padding-bottom: 170px;
 }
 
 .intro__title {
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 29px;
 	padding: 0;
 	
 	color: $color1;
@@ -23,7 +23,7 @@
 .intro__desc {
 	max-width: 940px;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 49px;
 	padding: 0;
 	
 	color: $color1;
@@ -36,8 +36,8 @@
 
 .intro__button {
 	margin: 0 auto;
-	margin-bottom: 50px;
-	padding: 10px 30px;
+	margin-bottom: 90px;
+	padding: 8px 48px;
 	
 	display: block;
 	border: none;
@@ -49,14 +49,20 @@
 	font-weight: 600;
 	line-height: 28px;
 	text-transform: uppercase;
+	cursor: pointer;
+	
+	&:hover,
+	&:focus {
+		transform: scale(1.05);
+	}
 }
 
 .intro__img-zone {
 	padding: 63px 0;
 	position: relative;
 	display: flex;
-	-webkit-justify-content: space-around;
-	        justify-content: space-around;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
 	
 	&::after {
 		content: '';
@@ -64,6 +70,8 @@
 		display: block;
 		width: 570px;
 		height: 152px;
+		left: 50%;
+		margin-left: -285px;
 		bottom: -125px;
 		background-image: url('../img/intro__card-shadow.png');
 	}
