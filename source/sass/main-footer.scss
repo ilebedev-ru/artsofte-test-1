@@ -3,6 +3,12 @@
   background-color: $backgroung-color1;
 	background-image: url('../img/main-footer__bg.png');
 	background-repeat: no-repeat;
+	
+	@media (max-width: $desktop-width) {
+    	-webkit-background-size: cover;
+    	     -o-background-size: cover;
+    	        background-size: cover;
+  	}
 }
 
 .main-footer__wrapper {

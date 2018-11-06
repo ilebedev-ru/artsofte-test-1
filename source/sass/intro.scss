@@ -10,6 +10,11 @@
 	@media (max-width: $desktop-width) {
     	padding-top: 120px;
   	}
+
+  	@media (max-width: $tablet-width) {
+		padding-top: 80px;
+		padding-bottom: 70px;
+	}
 }
 
 .intro__title {
@@ -26,6 +31,10 @@
 	@media (max-width: $desktop-width) {
     	line-height: 44px;
   	}
+
+  	@media (max-width: $tablet-width) {
+		font-size: 34px;
+	}
 }
 
 .intro__desc {
@@ -63,6 +72,10 @@
 	&:focus {
 		transform: scale(1.05);
 	}
+
+	@media (max-width: $tablet-width) {
+		margin-bottom: 60px;
+  	}
 }
 
 .intro__img-zone {
@@ -83,6 +96,19 @@
 		bottom: -125px;
 		background-image: url('../img/intro__card-shadow.png');
 	}
+
+	@media (max-width: $tablet-width) {
+		display: block;
+		padding: 20px 0;
+		
+		&::after { 
+			width: 90%;
+			margin-left: -45%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			bottom: -130px;
+		}
+  	}
 }
 
 .intro__img {
@@ -100,4 +126,15 @@
 		margin-left: -285px;
 		opacity: 1;
 	}
+
+	@media (max-width: $tablet-width) {
+		display: none;
+		&--main {
+			position: relative;
+			display: block;
+			width: 90%;
+			height: auto;
+			margin-left: -45%;
+		}
+  	}
 }

@@ -3,6 +3,10 @@
 	background-color: $backgroung-color1;
 	background-image: url('../img/statistics__bg2.png');
 	background-repeat: no-repeat;
+	
+	@media (max-width: $tablet-width) {
+    	background-size: cover;
+  	}
 }
 
 .statistics__wrapper {
@@ -34,6 +38,10 @@
 	@media (max-width: $desktop-width) {
     	width: 50%;
     	margin-bottom: 30px;
+  	}
+
+  	@media (max-width: $tablet-width) {
+    	width: 100%;
   	}
 }
 
