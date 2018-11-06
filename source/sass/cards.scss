@@ -13,6 +13,11 @@
 	padding-top: 145px;
 	padding-bottom: 210px;
 	background-color: $backgroung-color1;
+	
+	@media (max-width: $desktop-width) {
+    	padding-top: 100px;
+    	padding-bottom: 100px;
+  	}
 }
 
 .cards__wrapper {
@@ -42,6 +47,10 @@
 	line-height: 42px;
 	text-align: center;
 	text-transform: uppercase;
+	
+	@media (max-width: $desktop-width) {
+    	margin-bottom: 50px;
+  	}
 }
 
 .cards__list {
@@ -53,6 +62,17 @@
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
 	align-items: self-start;
+	
+	@media (max-width: $desktop-width) {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+  	@media (max-width: $tablet-width) {
+    	// width: 300px;
+    	// margin: 0 auto;
+  	}
 }
 
 .cards__item {
@@ -60,6 +80,11 @@
 	padding: 40px 0;
 	background-color: transparent;
 	position: relative;
+	
+	@media (max-width: $desktop-width) {
+		width: 100%;
+		padding: 30px 0;
+	}
 }
 
 .cards__link {

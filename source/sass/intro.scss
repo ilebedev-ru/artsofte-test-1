@@ -6,6 +6,10 @@
 	@include desktop-container;
 	padding-top: 193px;
 	padding-bottom: 170px;
+	
+	@media (max-width: $desktop-width) {
+    	padding-top: 120px;
+  	}
 }
 
 .intro__title {
@@ -18,6 +22,10 @@
 	font-weight: 600;
 	line-height: 26px;
 	text-align: center;
+	
+	@media (max-width: $desktop-width) {
+    	line-height: 44px;
+  	}
 }
 
 .intro__desc {
@@ -80,7 +88,12 @@
 .intro__img {
 	opacity: 0.4;
 	
+	@media (max-width: $desktop-width) {
+    	width: 50%;
+  	}
+	
 	&--main {
+		width: auto;
 		position: absolute;
 		top: 0;
 		left: 50%;

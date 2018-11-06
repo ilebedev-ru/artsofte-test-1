@@ -19,6 +19,14 @@ body {
   font-size: $fontsize;
   line-height: 1.2;
   color: $color2;
+  
+  @media (max-width: $desktop-width) {
+    min-width: $tablet-width;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: $mobile-width;
+  }
 }
 
 .visually-hidden {

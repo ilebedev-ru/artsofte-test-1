@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Digital Baking</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/Poppins-Regular.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/Raleway-Regular.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
@@ -13,7 +14,15 @@
         <div class="upline__wrapper">
           <a class="upline__logo">Digital Banking <span class="upline__logo-text">Be Safe Banking</span>
           </a>
-          <ul class="upline__list">
+
+          <button class="upline__button upline__button--spin">
+            <div class="upline__button-box">
+              <span class="visually-hidden">Кнопка меню</span>
+              <div class="upline__button-inner"></div>
+            </div>
+          </button>
+         
+          <ul class="upline__list upline__list--close">
             <li class="upline__item">
               <a class="upline__link" href="#cards">Cards</a>
             </li>
@@ -121,22 +130,22 @@
         <div class="statistics__wrapper">
           <h2 class="visually-hidden">Statistics</h2>
           <ul class="statistics__list">
-            <li class="statistics__item statistics__item--user">
+            <li class="statistics__item">
               <p class="statistics__icon"></p>
               <p class="statistics__num">725M</p>
               <p class="statistics__name">Happy User</p>
             </li>
-            <li class="statistics__item statistics__item--app">
+            <li class="statistics__item">
               <p class="statistics__icon"></p>
               <p class="statistics__num">700M</p>
               <p class="statistics__name">User Apprication</p>
             </li>
-            <li class="statistics__item statistics__item--payment">
+            <li class="statistics__item">
               <p class="statistics__icon"></p>
               <p class="statistics__num">10M+</p>
               <p class="statistics__name">Payment Service</p>
             </li>
-            <li class="statistics__item statistics__item--feedback">
+            <li class="statistics__item">
               <p class="statistics__icon"></p>
               <p class="statistics__num">600M</p>
               <p class="statistics__name">User Feedback</p>
@@ -168,6 +177,7 @@
         <p class="main-footer__text">Copyright @ Digital Marketing. AllRight Reseverd</p>
       </div>   
     </footer>
-    <script src="js/jq-carousel.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>

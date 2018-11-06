@@ -7,8 +7,11 @@
 
 .statistics__wrapper {
 	@include desktop-container;
-	padding-top: 180px;
-	padding-bottom: 180px;
+	padding: 180px 0;
+	
+	@media (max-width: $desktop-width) {
+    	padding: 80px 0;
+  	}
 }
 
 .statistics__list {
@@ -19,6 +22,19 @@
 	display: flex;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
+	
+	@media (max-width: $desktop-width) {
+    	-webkit-flex-wrap: wrap;
+    	    -ms-flex-wrap: wrap;
+    	        flex-wrap: wrap;
+  	}
+}
+
+.statistics__item {
+	@media (max-width: $desktop-width) {
+    	width: 50%;
+    	margin-bottom: 30px;
+  	}
 }
 
 .statistics__icon {
@@ -32,6 +48,10 @@
 	font-weight: 400;
 	line-height: 42px;
 	text-align: center;
+	
+	@media (max-width: $desktop-width) {
+    	margin-bottom: 20px;
+  	}
 }
 
 .statistics__num {

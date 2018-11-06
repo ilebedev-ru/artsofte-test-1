@@ -20,7 +20,6 @@
 	currentPositionLeft = -carouselItemWidth;
 	serviceCarouselList.style.left = currentPositionLeft + 'px';
 
-
 	var changePosition = function(current, num) {
 		if (current < num) {
 			var moveCarousel = setInterval(function() {
@@ -61,7 +60,10 @@
 		changePosition(currentPositionLeft, currentPositionLeft + -carouselItemWidth);
 		currentPositionLeft += -carouselItemWidth;
 
-		if (currentPositionLeft + -carouselWindowWidth == -carouselAllWidth) {
+		console.log(carouselWindowWidth);
+		console.log(currentPositionLeft + -carouselWindowWidth);
+
+		if (currentPositionLeft + -carouselWindowWidth <= -carouselAllWidth) {
 			serviceBtnNext.disabled = true;
 			serviceBtnNext.style.opacity = 0.2;
 		}

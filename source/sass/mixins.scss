@@ -1,4 +1,12 @@
 @mixin desktop-container {
   width: $desktop-width;
   margin: 0 auto;
+  
+  @media (max-width: $desktop-width) {
+	width: $tablet-width;
+  }
+
+  @media (max-width: $tablet-width) {
+	width: $mobile-width;
+  }
 }
