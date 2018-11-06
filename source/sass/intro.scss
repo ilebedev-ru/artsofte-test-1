@@ -114,6 +114,10 @@
 .intro__img {
 	opacity: 0.4;
 	
+	&:nth-child(2) {
+		margin-left: auto;
+	}
+	
 	@media (max-width: $desktop-width) {
     	width: 50%;
   	}
